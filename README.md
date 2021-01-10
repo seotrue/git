@@ -37,4 +37,15 @@
 
 ## git 문법
 ### 자주쓰는 문법
+1. 원격 연결 <br>
+ > git remote add origin 깃허브 주소  
 
+### 헷갈리는 문법
+1. git rebase i HEAD~3
+커밋 목록 합치기  
+> error: invalid line 1: S BBE5056 remove will commit
+  error: cannot 'squash' without a previous commit
+  You can fix this with 'git rebase --edit-todo' and then run 'git rebase --continue'.
+  Or you can abort the rebase with 'git rebase --abort'.  
+
+HEAD~3 : 해드 기준 3번째 전 커밋 까지 불러오는것 인데 커밋목록중 첫번째 커밋도 squash 하니 에로 발생
